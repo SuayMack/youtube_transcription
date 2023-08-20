@@ -8,8 +8,15 @@ form.addEventListener('submit', (e) => {
   try {
     loadingMessage('Iniciando a aplicação...');
     startLoading();
-    //pegar os dados do form
+
+    //get form data
+    const formData = new FormData(form);
+    const url = formData.get('url');
+    console.log(url);
+
     //load video
+   
+
   } catch (error) {
     console.log('[SUBMIT_ERROR]', error);
   } finally {
