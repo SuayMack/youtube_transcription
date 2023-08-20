@@ -1,0 +1,17 @@
+{
+  "name": "frontend-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "vue-bundle-renderer": "^0.4.4"
+  }
+}
