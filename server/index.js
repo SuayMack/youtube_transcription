@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { downloader } from "./download-video.js";
 
 const app = express();
 app.use(cors());
@@ -9,6 +10,7 @@ app.get('/audio', async (req, res) => {
 
   try {
     //download
+    await downloader(videoId);
     // create mp3 file
 
     return res.send('ok');
@@ -17,7 +19,7 @@ app.get('/audio', async (req, res) => {
 
     console.log(error);
     return res.send(error);
-    
+
   } finally {
     
   }

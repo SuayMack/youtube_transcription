@@ -18,8 +18,8 @@ form.addEventListener('submit', async(e) => {
     //load video
     await loadVideo(url);
 
-    //download
-    loadingMessage('Conectando com o backend a aplicação...');
+    //conect server
+    loadingMessage('Baixando e convertendo o video...');
     await axios.get('http://localhost:3333/audio?v=' + getVideoId(url));
 
   } catch (error) {
