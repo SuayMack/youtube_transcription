@@ -1,4 +1,6 @@
 import './form.js';
+import './loading.js'
+import './copy.js';
 
 //styles
 import '../styles/global.css';
